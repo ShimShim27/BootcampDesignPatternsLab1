@@ -23,7 +23,6 @@ public abstract class AbstractDigitNamer implements DigitNamer {
 
 	public void chain(DigitNamer nextDigitNamer) {
 		this.nextDigitNamer = nextDigitNamer;
-
 	}
 
 	protected boolean isFinalDigitNamed(int inputNumber, int currentDigitNormalPositionIndex) {
