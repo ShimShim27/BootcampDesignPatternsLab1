@@ -17,7 +17,7 @@ public class Main {
 		hundreds.chain(ones);
 		
 		new TenToNineteenDigitNamesProvider();
-		System.out.println(ones.getName(Integer.MAX_VALUE, 0));
+		System.out.println(ones.getName(1_000_000, 0));
 	}
 
 }
