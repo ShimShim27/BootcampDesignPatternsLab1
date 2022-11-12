@@ -1,27 +1,24 @@
 package lab.designpattern.lab4.main;
 
-import lab.designpattern.lab4.adapter.MediaPlayerAdapter;
-import lab.designpattern.lab4.player.VlcPlayer;
+import lab.designpattern.lab4.adapter.MediaAdapter;
+import lab.designpattern.lab4.base.MediaPlayer;
 import lab.designpattern.lab4.player.AudioPlayer;
 import lab.designpattern.lab4.player.Mp4Player;
+import lab.designpattern.lab4.player.VLCPlayer;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		AudioPlayer audioPlayer = new AudioPlayer();
-		VlcPlayer vlcPlayer = new VlcPlayer();
+		VLCPlayer vlcPlayer = new VLCPlayer();
 		Mp4Player mp4Player = new Mp4Player();
+		
+		MediaPlayer mediaPlayerWithMp4 = new AudioPlayer(new MediaAdapter(mp4Player));
+		MediaPlayer mediaPlayerWithVLC = new AudioPlayer(new MediaAdapter(vlcPlayer));
 
-		audioPlayer.play();
-		vlcPlayer.play();
-		mp4Player.play();
-
-		MediaPlayerAdapter adapter1 = new MediaPlayerAdapter(vlcPlayer);
-		adapter1.play();
-
-		MediaPlayerAdapter adapter2 = new MediaPlayerAdapter(mp4Player);
-		adapter2.play();
+		mediaPlayerWithMp4.play();
+		System.out.println();
+		mediaPlayerWithVLC.play();
 
 	}
 

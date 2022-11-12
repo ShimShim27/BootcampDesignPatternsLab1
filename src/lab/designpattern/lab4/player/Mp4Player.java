@@ -5,8 +5,13 @@ import lab.designpattern.lab4.base.AdvancedMediaPlayer;
 public class Mp4Player implements AdvancedMediaPlayer {
 
 	@Override
-	public void play() {
-		System.out.println("Playing mp4");
+	public void playVLC() {
+
+	}
+
+	@Override
+	public void playMP4() {
+		System.out.println("Playing Mp4");
 
 	}
 
