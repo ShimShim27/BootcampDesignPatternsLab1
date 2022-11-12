@@ -4,6 +4,12 @@ import lab.designpattern.lab1.base.DigitNamer;
 import lab.designpattern.lab1.factory.DigitNamesProviderFactory;
 import lab.designpattern.lab1.factory.DigitNamesProviderFactory.ProviderType;
 
+/**
+ * 
+ * Naming flow starts from right to left which
+ * is the normal flow of a base 10 number
+ *
+ */
 public abstract class AbstractDigitNamer implements DigitNamer {
 	private DigitNamer nextDigitNamer;
 
