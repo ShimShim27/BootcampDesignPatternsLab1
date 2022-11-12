@@ -6,7 +6,7 @@ import lab.designpattern.lab4.player.AudioPlayer;
 import lab.designpattern.lab4.player.Mp4Player;
 import lab.designpattern.lab4.player.VLCPlayer;
 
-public class Main {
+public class AdapterPatternDemo {
 
 	public static void main(String[] args) {
 
