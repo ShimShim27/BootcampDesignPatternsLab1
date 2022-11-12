@@ -13,7 +13,7 @@ import lab.designpattern.lab1.factory.DigitNamesProviderFactory.ProviderType;
 public abstract class AbstractDigitNamer implements DigitNamer {
 	private DigitNamer nextDigitNamer;
 
-	protected int getDigitFromNumber(long number, int digitNormalIndex) {
+	protected int extractDigitFromNumber(long number, int digitNormalIndex) {
 
 		int upperBound = (int) (number % Math.pow(10, digitNormalIndex + 1));
 		int excessNumber = (int) (number % Math.pow(10, digitNormalIndex));
