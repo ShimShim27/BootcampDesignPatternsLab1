@@ -17,6 +17,10 @@ public class Main {
 		hundreds.chain(ones);
 		
 		System.out.println(ones.getName(1_000_000, 0));
+		System.out.println(ones.getName(Integer.MAX_VALUE, 0));
+		System.out.println(ones.getName(29, 0));
+		System.out.println(ones.getName(69_000, 0));
+		System.out.println(ones.getName(0, 0));
 	}
 
 }
