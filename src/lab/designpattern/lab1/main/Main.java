@@ -1,10 +1,6 @@
 package lab.designpattern.lab1.main;
 
 import lab.designpattern.lab1.base.DigitNamer;
-import lab.designpattern.lab1.entity.digitnamesprovider.TenToNineteenDigitNamesProvider;
-import lab.designpattern.lab1.entity.namer.HundredsDigitNamer;
-import lab.designpattern.lab1.entity.namer.OnesDigitNamer;
-import lab.designpattern.lab1.entity.namer.TensDigitNamer;
 import lab.designpattern.lab1.factory.DigitNamerFactory;
 
 public class Main {
