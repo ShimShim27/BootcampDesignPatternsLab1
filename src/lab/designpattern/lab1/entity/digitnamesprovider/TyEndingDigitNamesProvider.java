@@ -1,4 +1,4 @@
-package lab.designpattern.lab1.entity.provider;
+package lab.designpattern.lab1.entity.digitnamesprovider;
 
 import lab.designpattern.lab1.base.DigitNamesProvider;
 

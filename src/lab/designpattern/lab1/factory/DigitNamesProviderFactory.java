@@ -1,9 +1,9 @@
 package lab.designpattern.lab1.factory;
 
 import lab.designpattern.lab1.base.DigitNamesProvider;
-import lab.designpattern.lab1.entity.provider.BasicDigitNamesProvider;
-import lab.designpattern.lab1.entity.provider.TenToNineteenDigitNamesProvider;
-import lab.designpattern.lab1.entity.provider.TyEndingDigitNamesProvider;
+import lab.designpattern.lab1.entity.digitnamesprovider.BasicDigitNamesProvider;
+import lab.designpattern.lab1.entity.digitnamesprovider.TenToNineteenDigitNamesProvider;
+import lab.designpattern.lab1.entity.digitnamesprovider.TyEndingDigitNamesProvider;
 
 public class DigitNamesProviderFactory {
 
