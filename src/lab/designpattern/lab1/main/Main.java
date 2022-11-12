@@ -16,7 +16,6 @@ public class Main {
 		tens.chain(hundreds);
 		hundreds.chain(ones);
 		
-		new TenToNineteenDigitNamesProvider();
 		System.out.println(ones.getName(1_000_000, 0));
 	}
 
