@@ -12,7 +12,7 @@ public class Main {
 		System.out.println(namer.getName(1_000_000, 0));
 		System.out.println(namer.getName(Integer.MAX_VALUE, 0));
 		System.out.println(namer.getName(29, 0));
-		System.out.println(namer.getName(69_000, 0));
+		System.out.println(namer.getName(69_420, 0));
 		System.out.println(namer.getName(0, 0));
 	}
 
