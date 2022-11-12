@@ -6,14 +6,21 @@ import lab.designpattern.lab4.base.MediaPlayer;
 public class AudioPlayer implements MediaPlayer {
 	private MediaAdapter mediaAdapter;
 
+	public AudioPlayer() {
+
+	}
+
 	public AudioPlayer(MediaAdapter mediaAdapter) {
 		this.mediaAdapter = mediaAdapter;
 	}
 
 	@Override
 	public void play() {
-		mediaAdapter.play();
-		System.out.println("Playing audio");
+		if (mediaAdapter == null) {
+			System.out.println("Playing Mp3");
+		} else {
+			mediaAdapter.play();
+		}
 
 	}
 

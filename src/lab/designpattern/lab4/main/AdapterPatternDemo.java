@@ -12,10 +12,13 @@ public class AdapterPatternDemo {
 
 		VLCPlayer vlcPlayer = new VLCPlayer();
 		Mp4Player mp4Player = new Mp4Player();
-		
+
+		MediaPlayer basicMediaPlayer = new AudioPlayer();
 		MediaPlayer mediaPlayerWithMp4 = new AudioPlayer(new MediaAdapter(mp4Player));
 		MediaPlayer mediaPlayerWithVLC = new AudioPlayer(new MediaAdapter(vlcPlayer));
 
+		basicMediaPlayer.play();
+		System.out.println();
 		mediaPlayerWithMp4.play();
 		System.out.println();
 		mediaPlayerWithVLC.play();
