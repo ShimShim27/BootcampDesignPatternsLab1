@@ -7,8 +7,7 @@ import lab.designpattern.lab3.base.Shape;
 public class Square implements Shape{
 
 	@Override
-	public void draw() {
-		
+	public void draw() {	
 		System.out.println("Square");
 	}
 
