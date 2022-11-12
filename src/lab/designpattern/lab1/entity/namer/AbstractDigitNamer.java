@@ -17,14 +17,14 @@ public abstract class AbstractDigitNamer implements DigitNamer {
 
 		int upperBound = (int) (number % Math.pow(10, digitNormalIndex + 1));
 		int excessNumber = (int) (number % Math.pow(10, digitNormalIndex));
-		int digit = upperBound - excessNumber;
+		int currentDigit = upperBound - excessNumber;
 		
 		// remove all the trailing zeros
-		while (digit >= 10) {
-			digit /= 10;
+		while (currentDigit >= 10) {
+			currentDigit /= 10;
 		}
 
-		return digit;
+		return currentDigit;
 	}
 
 	public void chain(DigitNamer nextDigitNamer) {
