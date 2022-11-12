@@ -5,7 +5,7 @@ import lab.designpattern.lab1.factory.DigitNamesProviderFactory.ProviderType;
 public class OnesDigitNamer extends AbstractDigitNamer {
 
 	private static String[] THREE_DIGIT_GROUPING_NAMES = new String[] { "", "Thousand", "Million", "Billion",
-			"Trillion", "Quadrillion", "" };
+			"Trillion", "Quadrillion" };
 
 	@Override
 	public String getName(int inputNumber, int digitNormalPositionIndex) {
