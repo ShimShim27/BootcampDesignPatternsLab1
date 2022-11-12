@@ -3,7 +3,7 @@ package lab.designpattern.lab3.main;
 import lab.designpattern.lab3.factory.ShapeFactory;
 import lab.designpattern.lab3.factory.ShapeFactory.ShapeType;
 
-public class ShapeFactoryTest {
+public class FactoryPatternDemo {
 	public static void main(String[] args) {
 		ShapeFactory factory = ShapeFactory.getInstance();
 		
