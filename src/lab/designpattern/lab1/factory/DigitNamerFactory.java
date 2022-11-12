@@ -19,7 +19,7 @@ public class DigitNamerFactory {
 		return INSTANCE;
 	}
 
-	public DigitNamer createDigitNameInstance() {
+	public DigitNamer createDigitNamerInstance() {
 		OnesDigitNamer ones = new OnesDigitNamer();
 		TensDigitNamer tens = new TensDigitNamer();
 		HundredsDigitNamer hundreds = new HundredsDigitNamer();
