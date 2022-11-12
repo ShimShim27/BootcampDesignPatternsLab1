@@ -10,10 +10,10 @@ public class TensDigitNamer extends AbstractDigitNamer {
 			return "";
 		}
 
-		int digit = this.extractDigitFromNumber(inputNumber, digitNormalPositionIndex);
+		int currentDigit = this.extractDigitFromNumber(inputNumber, digitNormalPositionIndex);
 		int previousDigit = this.extractDigitFromNumber(inputNumber, digitNormalPositionIndex - 1);
-		String name = this.getDigitNames(ProviderType.TYPE_TY_ENDING)[digit];
-		if (digit == 1) {
+		String name = this.getDigitNames(ProviderType.TYPE_TY_ENDING)[currentDigit];
+		if (currentDigit == 1) {
 			name = this.getDigitNames(ProviderType.TYPE_TO_TEN_NINETEEN)[previousDigit];
 		}
 

@@ -13,8 +13,8 @@ public class OnesDigitNamer extends AbstractDigitNamer {
 			return "";
 		}
 
-		int digit = this.extractDigitFromNumber(inputNumber, digitNormalPositionIndex);
-		String name = this.getDigitNames(ProviderType.TYPE_BASIC)[digit];
+		int currentDigit = this.extractDigitFromNumber(inputNumber, digitNormalPositionIndex);
+		String name = this.getDigitNames(ProviderType.TYPE_BASIC)[currentDigit];
 
 		int inputNumberCount = String.valueOf(inputNumber).length();
 		boolean canGetNextDigit = digitNormalPositionIndex + 1 < inputNumberCount;
@@ -28,7 +28,7 @@ public class OnesDigitNamer extends AbstractDigitNamer {
 		// check if the next two digit is equal to 0 when the current digit is 0
 		String threeDigitGroupingName = THREE_DIGIT_GROUPING_NAMES[digitNormalPositionIndex / 3];
 
-		if (digit == 0 && canGetNextDigit && this.extractDigitFromNumber(inputNumber, digitNormalPositionIndex + 1) == 0) {
+		if (currentDigit == 0 && canGetNextDigit && this.extractDigitFromNumber(inputNumber, digitNormalPositionIndex + 1) == 0) {
 			if (canGetTheNextTwoDigit && this.extractDigitFromNumber(inputNumber, digitNormalPositionIndex + 2) == 0) {
 				threeDigitGroupingName = "";
 			}

@@ -12,9 +12,9 @@ public class HundredsDigitNamer extends AbstractDigitNamer {
 			return "";
 		}
 
-		int digit = this.extractDigitFromNumber(inputNumber, digitNormalPositionIndex);
+		int currentDigit = this.extractDigitFromNumber(inputNumber, digitNormalPositionIndex);
 
-		String name = this.getDigitNames(ProviderType.TYPE_BASIC)[digit];
+		String name = this.getDigitNames(ProviderType.TYPE_BASIC)[currentDigit];
 
 		if (!name.isEmpty()) {
 			name = String.format("%s %s", name, HUNDRED);
