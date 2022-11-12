@@ -2,17 +2,18 @@ package lab.designpattern.lab2.main;
 
 import lab.designpattern.lab2.base.Ticket;
 import lab.designpattern.lab2.base.TicketsManager;
-import lab.designpattern.lab2.entity.manager.DefaultTicketManager;
-import lab.designpattern.lab2.entity.ticket.AdultTicket;
-import lab.designpattern.lab2.entity.ticket.ChildTicket;
-import lab.designpattern.lab2.entity.ticket.SeniorTicket;
-import lab.designpattern.lab2.factory.TicketFactory;
+import lab.designpattern.lab2.factory.DefaultTicketFactory;
+import lab.designpattern.lab2.model.manager.DefaultTicketManager;
+import lab.designpattern.lab2.model.ticket.AdultTicket;
+import lab.designpattern.lab2.model.ticket.ChildTicket;
+import lab.designpattern.lab2.model.ticket.SeniorTicket;
 
 /**
- * to create your own custom ticket, just inherit from the AbstractTicket class
+ * to create your own custom ticket, just inherit from the AbstractTicket class.
+ * to implement custom tax calculation logic, override getTotalTax method of Abstract ticket class.
  */
 
-public class XYZStatdium {
+public class XYZStadiumTicketBooth {
 
 	public static void main(String[] args) {
 
@@ -45,10 +46,10 @@ public class XYZStatdium {
 	}
 
 	private static Ticket createTicket(int age, double taxRate) throws Exception {
-		return TicketFactory.getInstance().createTicketInstance(age,
-				new TicketFactory.TicketConstructorParametersWrapper(AdultTicket.class, 15, taxRate),
-				new TicketFactory.TicketConstructorParametersWrapper(SeniorTicket.class, 12, taxRate),
-				new TicketFactory.TicketConstructorParametersWrapper(ChildTicket.class, 10, taxRate));
+		return DefaultTicketFactory.getInstance().createTicketInstance(age,
+				new DefaultTicketFactory.TicketConstructorParametersWrapper(AdultTicket.class, 15, taxRate),
+				new DefaultTicketFactory.TicketConstructorParametersWrapper(SeniorTicket.class, 12, taxRate),
+				new DefaultTicketFactory.TicketConstructorParametersWrapper(ChildTicket.class, 10, taxRate));
 	}
 	
 	

@@ -1,4 +1,4 @@
-package lab.designpattern.lab2.entity.manager;
+package lab.designpattern.lab2.model.manager;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

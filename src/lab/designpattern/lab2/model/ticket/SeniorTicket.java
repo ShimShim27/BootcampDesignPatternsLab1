@@ -1,4 +1,4 @@
-package lab.designpattern.lab2.entity.ticket;
+package lab.designpattern.lab2.model.ticket;
 
 
 
