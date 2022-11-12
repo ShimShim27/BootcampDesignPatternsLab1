@@ -13,7 +13,7 @@ import lab.designpattern.lab2.model.ticket.SeniorTicket;
  * to implement custom tax calculation logic, override getTotalTax method of Abstract ticket class.
  */
 
-public class XYZStadiumTicketBooth {
+public class TicketBoothDemo {
 
 	public static void main(String[] args) {
 
