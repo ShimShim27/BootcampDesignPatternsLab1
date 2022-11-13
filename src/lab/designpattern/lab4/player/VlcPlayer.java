@@ -7,11 +7,11 @@ public class VLCPlayer implements AdvancedMediaPlayer {
 	@Override
 	public void playVLC() {
 		System.out.println("Playing VLC");
-
 	}
 
 	@Override
 	public void playMP4() {
+		
 
 	}
 
